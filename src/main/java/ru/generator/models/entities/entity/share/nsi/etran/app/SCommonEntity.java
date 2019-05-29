@@ -21,16 +21,16 @@ public class SCommonEntity extends NsiWithTransIdAbstractEntity implements Seria
     @Id
     @Column(name = "PARAM_ID")
     @XmlPath("PARAMID/@value")
-    @Description(value = "ИИдентификатор параметра - соответствует ParamID CommonTypes", position = 50)
+    @Description(value = "ИИдентификатор параметра - соответствует ParamID CommonTypes")
     private Integer paramid;
     @Id
     @Column(name = "id")
     @XmlPath("ID/@value")
-    @Description(value = "Идент. параметра", position = 100)
+    @Description(value = "Идент. параметра")
     private Integer id;
     @Column(name = "name", length = 255)
     @XmlPath("NAME/@value")
-    @Description(value = "Значение параметра", position = 200)
+    @Description(value = "Значение параметра")
     private String name;
 }
  

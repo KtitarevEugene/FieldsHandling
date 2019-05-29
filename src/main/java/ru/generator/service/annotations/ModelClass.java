@@ -9,4 +9,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 public @interface ModelClass {
     Class<?> value();
+    String rootTypeName() default "object";
 }

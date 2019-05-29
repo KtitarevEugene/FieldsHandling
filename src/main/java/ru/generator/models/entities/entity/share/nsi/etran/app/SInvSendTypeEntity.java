@@ -20,19 +20,19 @@ public class SInvSendTypeEntity implements NsiEtran {
     @Id
     @XmlPath("KIND_SEND/@value")
     @Column(name = "KIND_SEND")
-    @Description(value = "Справочников видов отправки.", position = 100)
+    @Description(value = "Справочников видов отправки.")
     private Integer kindSend;
     @XmlPath("NAME/@value")
     @Column(name = "NAME", length = 40)
-    @Description(value = "Наименование", position = 200)
+    @Description(value = "Наименование")
     private String name;
     @XmlPath("IODV/@value")
     @Column(name = "IODV")
-    @Description(value = "Код", position = 300)
+    @Description(value = "Код")
     private Integer iodv;
     @XmlPath("SHORT_NAME/@value")
     @Column(name = "SHORT_NAME", length = 5)
-    @Description(value = "Аббревиатура вида отправки", position = 400)
+    @Description(value = "Аббревиатура вида отправки")
     private String shortName;
 }
  

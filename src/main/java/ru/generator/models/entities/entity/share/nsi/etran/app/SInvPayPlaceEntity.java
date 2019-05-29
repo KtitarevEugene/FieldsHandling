@@ -20,15 +20,15 @@ public class SInvPayPlaceEntity implements NsiEtran {
     @Id
     @XmlPath("PAY_PLACE/@value")
     @Column(name = "PAY_PLACE")
-    @Description(value = "Идентификатор места, где будет произведен расчет.", position = 100)
+    @Description(value = "Идентификатор места, где будет произведен расчет.")
     private Integer payPlace;
     @XmlPath("NAME/@value")
     @Column(name = "NAME", length = 40)
-    @Description(value = "Наименование места расчета.", position = 200)
+    @Description(value = "Наименование места расчета.")
     private String name;
     @XmlPath("CODE/@value")
     @Column(name = "CODE")
-    @Description(value = "Код места расчета.", position = 300)
+    @Description(value = "Код места расчета.")
     private Integer code;
 }
  

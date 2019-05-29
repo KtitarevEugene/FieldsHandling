@@ -20,27 +20,27 @@ public class SContSizeBigEntity implements NsiEtran {
     @Id
     @XmlPath("CONT_SIZE_ID/@value")
     @Column(name = "CONT_SIZE_ID")
-    @Description(value = "Идентификатор размера крупнотоннажного контейнера", position = 100)
+    @Description(value = "Идентификатор размера крупнотоннажного контейнера")
     private Integer contSizeId;
     @XmlPath("HEIGHT/@value")
     @Column(name = "HEIGHT")
-    @Description(value = "Номинальная высота в мм", position = 200)
+    @Description(value = "Номинальная высота в мм")
     private Integer height;
     @XmlPath("WIDTH_F/@value")
     @Column(name = "WIDTH_F")
-    @Description(value = "Номинальная длина в футах", position = 300)
+    @Description(value = "Номинальная длина в футах")
     private Integer widthF;
     @XmlPath("CODE/@value")
     @Column(name = "CODE", length = 2)
-    @Description(value = "Код размера", position = 400)
+    @Description(value = "Код размера")
     private String code;
     @XmlPath("HEIGHTTXT/@value")
     @Column(name = "HEIGHTTXT", length = 225)
-    @Description(value = "Номинальная высота в мм с диапазонами", position = 500)
+    @Description(value = "Номинальная высота в мм с диапазонами")
     private String heighttxt;
     @XmlPath("COMMENTS/@value")
     @Column(name = "COMMENTS", length = 225)
-    @Description(value = "Примечания", position = 600)
+    @Description(value = "Примечания")
     private String comments;
 }
  

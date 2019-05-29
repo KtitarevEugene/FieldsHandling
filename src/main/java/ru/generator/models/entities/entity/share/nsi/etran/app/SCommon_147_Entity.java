@@ -28,11 +28,11 @@ public class SCommon_147_Entity extends NsiWithTransIdAbstractEntity implements 
     @Id
     @Column(name = "id")
     @XmlPath("ID/@value")
-    @Description(value = "Идент. параметра", position = 100)
+    @Description(value = "Идент. параметра")
     private Integer id;
     @Column(name = "name", length = 255)
     @XmlPath("NAME/@value")
-    @Description(value = "Значение параметра", position = 200)
+    @Description(value = "Значение параметра")
     private String name;
 
     public SCommon_147_Entity() {

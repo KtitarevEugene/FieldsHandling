@@ -31,24 +31,24 @@ public class InvTarifMarkEntity {
 
 //    @Basic
 //    @Column(name = "tarif_mark_code", nullable = true, length = 20)
-//    @Description(value = "Код тарифной отметки", position = 300)
+//    @Description(value = "Код тарифной отметки")
 //    private String tarifMarkCode;
 
     @Nsi(nsiClassEntity = STInvTranspClauseEntity.class)
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "tarif_mark_id", referencedColumnName = "TRANSPCLAUSE_ID")
-    @Description(value = "Тарифная отметка", position = 300)
+    @Description(value = "Тарифная отметка")
     @ModelClass(STInvTranspClauseEntity.class)
     private STInvTranspClauseEntity tarifMark;
 
     @Basic
     @Column(name = "tarif_mark_text", nullable = true, length = 255)
-    @Description(value = "Замечание", position = 400)
+    @Description(value = "Замечание")
     private String tarifMarkText;
 
 
     @Basic
-    @Description(value = "Номер вагона", position = 700)
+    @Description(value = "Номер вагона")
     @Column(name = "car_number", nullable = true, length = 20)
     private String carNumber;
 
@@ -56,7 +56,7 @@ public class InvTarifMarkEntity {
     @JsonIdentityReference(alwaysAsId = true)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_invoice", referencedColumnName = "invoice_doc_id", nullable = false)
-    @Description(value = "id_invoice", position = 500)
+    @Description(value = "id_invoice")
     @IgnoreField
     private InvoiceEntity invoice;
 }

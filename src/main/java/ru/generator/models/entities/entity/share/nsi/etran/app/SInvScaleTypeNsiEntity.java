@@ -24,23 +24,23 @@ public class SInvScaleTypeNsiEntity extends NsiWithTransIdAbstractEntity impleme
     @Id
     @XmlPath("SCALE_TYPE/@value")
     @Column(name = "SCALE_TYPE")
-    @Description(value = "Идентификатор метода взвешивания.", position = 100)
+    @Description(value = "Идентификатор метода взвешивания.")
     private Integer scaleType;
     @XmlPath("SHORT_NAME/@value")
     @Column(name = "SHORT_NAME", length = 255)
-    @Description(value = "Наименование метода взвешивания.", position = 200)
+    @Description(value = "Наименование метода взвешивания.")
     private String shortName;
     @XmlPath("SCALE_CODE/@value")
     @Column(name = "SCALE_CODE", length = 2)
-    @Description(value = "Код способа взвешивания", position = 300)
+    @Description(value = "Код способа взвешивания")
     private String scaleCode;
     @XmlPath("SMGS_NAME/@value")
     @Column(name = "SMGS_NAME", length = 255)
-    @Description(value = "Наименование СМГС", position = 400)
+    @Description(value = "Наименование СМГС")
     private String smgsName;
     @XmlPath("FAULT/@value")
     @Column(name = "FAULT")
-    @Description(value = "Требуется ввод погрешности (0-нет, 1-да)", position = 500)
+    @Description(value = "Требуется ввод погрешности (0-нет, 1-да)")
     private Integer fault;
 }
  

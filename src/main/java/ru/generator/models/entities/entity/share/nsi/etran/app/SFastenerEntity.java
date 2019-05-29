@@ -23,11 +23,11 @@ public class SFastenerEntity extends TimeActiveNsiEntity implements NsiEtran {
     @Id
     @XmlPath("FASTENER_ID/@value")
     @Column(name = "FASTENER_ID")
-    @Description(value = "Код средства крепления (из АСКМ)", position = 100)
+    @Description(value = "Код средства крепления (из АСКМ)")
     private Integer fastenerId;
     @XmlPath("FASTENER_NAME/@value")
     @Column(name = "FASTENER_NAME", length = 4000)
-    @Description(value = "Наименование средства крепления", position = 200)
+    @Description(value = "Наименование средства крепления")
     private String fastenerName;
 
 }

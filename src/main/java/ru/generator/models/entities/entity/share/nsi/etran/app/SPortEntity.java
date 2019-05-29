@@ -24,25 +24,25 @@ public class SPortEntity extends TimeActiveNsiEntity implements NsiEtran {
     @Id
     @XmlPath("ID/@value")
     @Column(name = "ID")
-    @Description(value = "Идентификатор порта (ID организации)\n", position = 100)
+    @Description(value = "Идентификатор порта (ID организации)\n")
     private Integer id;
     //    @Id
     @XmlPath("CODE_OKPO/@value")
     @Column(name = "CODE_OKPO", length = 10)
-    @Description(value = "Код ОКПО (7 знаков для портов СНГ)", position = 200)
+    @Description(value = "Код ОКПО (7 знаков для портов СНГ)")
     private String codeOkpo;
     @XmlPath("NAME/@value")
     @Column(name = "NAME", length = 250)
-    @Description(value = "Наименование порта", position = 300)
+    @Description(value = "Наименование порта")
     private String name;
     @XmlPath("SHORTNAME/@value")
     @Column(name = "SHORTNAME", length = 60)
-    @Description(value = "Сокращенное наименование ", position = 400)
+    @Description(value = "Сокращенное наименование ")
     private String shortname;
     //    @Id
     @XmlPath("ST_ID/@value")
     @Column(name = "ST_ID")
-    @Description(value = "Условный идентификатор станции", position = 500)
+    @Description(value = "Условный идентификатор станции")
     private Integer stId;
 }
  

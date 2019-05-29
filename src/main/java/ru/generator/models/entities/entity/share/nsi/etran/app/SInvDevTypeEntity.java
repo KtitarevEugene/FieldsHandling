@@ -19,16 +19,16 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class SInvDevTypeEntity implements NsiEtran {
     @XmlPath("NAME/@value")
     @Column(name = "NAME", length = 40)
-    @Description(value = "Наименование типа перевозочного приспособления.", position = 100)
+    @Description(value = "Наименование типа перевозочного приспособления.")
     private String name;
     @Id
     @XmlPath("DEV_TYPE/@value")
     @Column(name = "DEV_TYPE")
-    @Description(value = "Код типа перевозочного приспособления.", position = 200)
+    @Description(value = "Код типа перевозочного приспособления.")
     private Integer devType;
     @XmlPath("SHORT_NAME/@value")
     @Column(name = "SHORT_NAME", length = 20)
-    @Description(value = "Краткое наименование", position = 300)
+    @Description(value = "Краткое наименование")
     private String shortName;
 }
  

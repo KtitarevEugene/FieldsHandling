@@ -25,46 +25,46 @@ public class STInvTranspClauseIn_15_16_Entity extends NsiWithTransIdAbstractEnti
     @Id
     @XmlPath("TRANSPCLAUSE_ID/@value")
     @Column(name = "TRANSPCLAUSE_ID")
-    @Description(value = "Идентификатор условия перевозки", position = 100)
+    @Description(value = "Идентификатор условия перевозки")
     private Integer transpclauseId;
     @XmlPath("CC_ID/@value")
     @Column(name = "CC_ID")
-    @Description(value = "Идентификатор образующего документа. Для КЗО (тип 3) CONV_COND.CC_DOC_ID. Для прилагаемых док-в (тип 7) COMMON категории 109\n", position = 200)
+    @Description(value = "Идентификатор образующего документа. Для КЗО (тип 3) CONV_COND.CC_DOC_ID. Для прилагаемых док-в (тип 7) COMMON категории 109\n")
     private Integer ccId;
     @XmlPath("TRANSPCLAUSETYPE_ID/@value")
     @Column(name = "TRANSPCLAUSETYPE_ID")
-    @Description(value = "Идентификатор типа условия перевозки. COMMON категории 107", position = 300)
+    @Description(value = "Идентификатор типа условия перевозки. COMMON категории 107")
     private Integer transpclausetypeId;
     @XmlPath("DESCRIPTION/@value")
     @Column(name = "DESCRIPTION", length = 4000)
-    @Description(value = "Описание", position = 400)
+    @Description(value = "Описание")
     private String description;
     @Column(name = "TARIFMARK", length = 20)
     @XmlPath("TARIFMARK/@value")
-    @Description(value = "Код тарифной отметки.штемпеля", position = 500)
+    @Description(value = "Код тарифной отметки.штемпеля")
     private String tarifmark;
     @XmlPath("STAMPPRINTPLACE_ID/@value")
     @Column(name = "STAMPPRINTPLACE_ID")
-    @Description(value = "Место печати отметки/штемпеля. COMMON категории 139\n", position = 600)
+    @Description(value = "Место печати отметки/штемпеля. COMMON категории 139\n")
     private Integer stampprintplaceId;
     @XmlPath("SHORTNAME/@value")
     @Column(name = "SHORTNAME", length = 20)
-    @Description(value = "Сокращенное наименование", position = 700)
+    @Description(value = "Сокращенное наименование")
     private String shortname;
     @XmlPath("CUSTOMTEXTDSCR/@value")
     @Column(name = "CUSTOMTEXTDSCR", length = 100)
-    @Description(value = "Описание произвольного текста", position = 800)
+    @Description(value = "Описание произвольного текста")
     private String customtextdscr;
     @XmlPath("ERROR_TEXT/@value")
     @Column(name = "ERROR_TEXT", length = 100)
-    @Description(value = "Окончание текста выводимой ошибки. Ошибка начинается со слов: «введите, далее из поля».", position = 900)
+    @Description(value = "Окончание текста выводимой ошибки. Ошибка начинается со слов: «введите, далее из поля».")
     private String errorText;
     @XmlPath("CHECKREQUIRED/@value")
     @Column(name = "CHECKREQUIRED")
-    @Description(value = "Требует проверки. NSI_DB.COMMON категори 132", position = 1000)
+    @Description(value = "Требует проверки. NSI_DB.COMMON категори 132")
     private Integer checkrequired;
     @XmlPath("EDITMASK/@value")
     @Column(name = "EDITMASK", length = 255)
-    @Description(value = "Маска для ввода если требуются данные", position = 1100)
+    @Description(value = "Маска для ввода если требуются данные")
     private String editmask;
 }

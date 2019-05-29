@@ -24,23 +24,23 @@ public class SGngFreightEntity extends NsiWithTransIdAbstractEntity implements S
     @Id
     @XmlPath("GF_ID/@value")
     @Column(name = "GF_ID")
-    @Description(value = "Условный идентификатор", position = 100)
+    @Description(value = "Условный идентификатор")
     private Integer gfId;
     @XmlPath("ORDER_NO/@value")
     @Column(name = "ORDER_NO", length = 40)
-    @Description(value = "Номер приказа на изменение классификатора", position = 200)
+    @Description(value = "Номер приказа на изменение классификатора")
     private String orderNo;
     @XmlPath("GF_CODE/@value")
     @Column(name = "GF_CODE", length = 6)
-    @Description(value = "Код груза", position = 300)
+    @Description(value = "Код груза")
     private String gfCode;
     @XmlPath("ETSNG/@value")
     @Column(name = "ETSNG", length = 3)
-    @Description(value = "Соотв.грузы ЕТСНГ(первые 3зн.кода ЕТСНГ)", position = 400)
+    @Description(value = "Соотв.грузы ЕТСНГ(первые 3зн.кода ЕТСНГ)")
     private String etsng;
     @XmlPath("GF_NAME/@value")
     @Column(name = "GF_NAME", length = 175)
-    @Description(value = "Наименование груза", position = 500)
+    @Description(value = "Наименование груза")
     private String gfName;
 }
  

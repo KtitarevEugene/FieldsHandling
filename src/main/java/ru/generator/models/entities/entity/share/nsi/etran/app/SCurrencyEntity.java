@@ -24,27 +24,27 @@ public class SCurrencyEntity extends NsiWithTransIdAbstractEntity implements Ser
     @Id
     @XmlPath("CUR_ID/@value")
     @Column(name = "CUR_ID")
-    @Description(value = "ID валюты. (OLD справочник - COMMON, paramid=12)", position = 100)
+    @Description(value = "ID валюты. (OLD справочник - COMMON, paramid=12)")
     private Integer curId;
     @XmlPath("CUR_CODE/@value")
     @Column(name = "CUR_CODE", length = 3)
-    @Description(value = "Цифровой Код валюты по ISO 4217-2001 \"Межгосударственный классификатор валют МК\"", position = 200)
+    @Description(value = "Цифровой Код валюты по ISO 4217-2001 \"Межгосударственный классификатор валют МК\"")
     private String curCode;
     @XmlPath("CUR_CODE_LAT/@value")
     @Column(name = "CUR_CODE_LAT", length = 3)
-    @Description(value = "Буквенный Код валюты по ISO 4217-2001 \"Межгосударственный классификатор валют МК\"", position = 300)
+    @Description(value = "Буквенный Код валюты по ISO 4217-2001 \"Межгосударственный классификатор валют МК\"")
     private String curCodeLat;
     @XmlPath("CUR_NAME/@value")
     @Column(name = "CUR_NAME", length = 255)
-    @Description(value = "Наименование валюты на русском", position = 400)
+    @Description(value = "Наименование валюты на русском")
     private String curName;
     @XmlPath("CUR_NAME_LAT/@value")
     @Column(name = "CUR_NAME_LAT", length = 255)
-    @Description(value = "Наименование валюты на английском", position = 500)
+    @Description(value = "Наименование валюты на английском")
     private String curNameLat;
     @XmlPath("CUR_TYPE/@value")
     @Column(name = "CUR_TYPE")
-    @Description(value = "ID типа валюты  (COMMON, paramid=304)", position = 600)
+    @Description(value = "ID типа валюты  (COMMON, paramid=304)")
     private Integer curType;
 
 }

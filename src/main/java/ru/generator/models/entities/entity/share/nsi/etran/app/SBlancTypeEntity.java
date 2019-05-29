@@ -23,23 +23,23 @@ public class SBlancTypeEntity extends TimeActiveNsiEntity implements NsiEtran {
     @Id
     @XmlPath("BLANC_ID/@value")
     @Column(name = "BLANC_ID")
-    @Description(value = "Идентификатор", position = 100)
+    @Description(value = "Идентификатор")
     private Integer blancId;
     @XmlPath("NAME/@value")
     @Column(name = "NAME", length = 100)
-    @Description(value = "Наименование", position = 200)
+    @Description(value = "Наименование")
     private String name;
     @XmlPath("CODE/@value")
     @Column(name = "CODE")
-    @Description(value = "Код", position = 300)
+    @Description(value = "Код")
     private Integer code;
     @XmlPath("MNEMO/@value")
     @Column(name = "MNEMO", length = 15)
-    @Description(value = "Мнемокод", position = 400)
+    @Description(value = "Мнемокод")
     private String mnemo;
     @XmlPath("NUMBERED/@value")
     @Column(name = "NUMBERED")
-    @Description(value = "Признак номерной отправки", position = 500)
+    @Description(value = "Признак номерной отправки")
     private Integer numbered;
 
 //    public SBlancTypeEntity() {

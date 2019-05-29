@@ -24,47 +24,47 @@ public class SCountryEntity extends NsiWithTransIdAbstractEntity implements Seri
     @Id
     @XmlPath("CN_ID/@value")
     @Column(name = "CN_ID")
-    @Description(value = "Условный идентификатор", position = 100)
+    @Description(value = "Условный идентификатор")
     private Integer cnId;
     @XmlPath("ORDER_NO/@value")
     @Column(name = "ORDER_NO", length = 40)
-    @Description(value = "Номер приказа на изменение классификатора", position = 200)
+    @Description(value = "Номер приказа на изменение классификатора")
     private String orderNo;
     @XmlPath("CN_CODE/@value")
     @Column(name = "CN_CODE", length = 4)
-    @Description(value = "Код ОКСМ стран мира", position = 300)
+    @Description(value = "Код ОКСМ стран мира")
     private String cnCode;
     @XmlPath("CN_NAME/@value")
     @Column(name = "CN_NAME", length = 65)
-    @Description(value = "Наименов.полное", position = 400)
+    @Description(value = "Наименов.полное")
     private String cnName;
     @XmlPath("CN_SHORT_NAME/@value")
     @Column(name = "CN_SHORT_NAME", length = 20)
-    @Description(value = "Наименнов.сокр.(рус)", position = 500)
+    @Description(value = "Наименнов.сокр.(рус)")
     private String cnShortName;
     @XmlPath("CN_CODE_SOATO/@value")
     @Column(name = "CN_CODE_SOATO", length = 4)
-    @Description(value = "Код СОАТО", position = 600)
+    @Description(value = "Код СОАТО")
     private String cnCodeSoato;
     @XmlPath("CN_CODE_OSGD/@value")
     @Column(name = "CN_CODE_OSGD", length = 2)
-    @Description(value = "Код ОСЖД", position = 700)
+    @Description(value = "Код ОСЖД")
     private String cnCodeOsgd;
     @XmlPath("CN_SIGN/@value")
     @Column(name = "CN_SIGN", length = 1)
-    @Description(value = "Тип государства(3–СНГ,4–Прибалтика, 5–Зарубежные)", position = 800)
+    @Description(value = "Тип государства(3–СНГ,4–Прибалтика, 5–Зарубежные)")
     private String cnSign;
     @XmlPath("ADMINCODE/@value")
     @Column(name = "ADMINCODE", length = 2)
-    @Description(value = "Код администрации", position = 900)
+    @Description(value = "Код администрации")
     private String admincode;
     @XmlPath("ADMINCODE_LAT/@value")
     @Column(name = "ADMINCODE_LAT", length = 7)
-    @Description(value = "Мнемокод администрации ж.д.", position = 1000)
+    @Description(value = "Мнемокод администрации ж.д.")
     private String admincodeLat;
     @XmlPath("CODE_LAT/@value")
     @Column(name = "CODE_LAT", length = 2)
-    @Description(value = "Код администрации 2-мя латинскими буквами (FI, RU и т.д.)", position = 1100)
+    @Description(value = "Код администрации 2-мя латинскими буквами (FI, RU и т.д.)")
     private String codeLat;
 
 //    public SCountryEntity() {

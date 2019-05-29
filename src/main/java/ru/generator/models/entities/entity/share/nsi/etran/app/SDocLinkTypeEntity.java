@@ -20,15 +20,15 @@ public class SDocLinkTypeEntity implements NsiEtran {
     @Id
     @XmlPath("DOC_LINK_TYPE_ID/@value")
     @Column(name = "DOC_LINK_TYPE_ID")
-    @Description(value = "Идентификатор типа связи", position = 100)
+    @Description(value = "Идентификатор типа связи")
     private Integer docLinkTypeId;
     @XmlPath("NAME1/@value")
     @Column(name = "NAME1", length = 1000)
-    @Description(value = "Название связи, если документ является «родителем»", position = 200)
+    @Description(value = "Название связи, если документ является «родителем»")
     private String name1;
     @XmlPath("NAME2/@value")
     @Column(name = "NAME2", length = 1000)
-    @Description(value = "Название связи, если документ является «потомком»", position = 300)
+    @Description(value = "Название связи, если документ является «потомком»")
     private String name2;
 }
  

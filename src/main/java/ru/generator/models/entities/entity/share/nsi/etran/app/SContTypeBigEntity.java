@@ -20,23 +20,23 @@ public class SContTypeBigEntity implements NsiEtran {
     @Id
     @XmlPath("CONT_TYPE_ID/@value")
     @Column(name = "CONT_TYPE_ID")
-    @Description(value = "Идентификатор типа крупнотоннажного контейнера", position = 100)
+    @Description(value = "Идентификатор типа крупнотоннажного контейнера")
     private Integer contTypeId;
     @XmlPath("TYPE_NAME/@value")
     @Column(name = "TYPE_NAME", length = 225)
-    @Description(value = "Наименование типа", position = 200)
+    @Description(value = "Наименование типа")
     private String typeName;
     @XmlPath("DETAIL/@value")
     @Column(name = "DETAIL", length = 225)
-    @Description(value = "Конструктивные особенности", position = 300)
+    @Description(value = "Конструктивные особенности")
     private String detail;
     @XmlPath("CODE/@value")
     @Column(name = "CODE", length = 6)
-    @Description(value = "Код", position = 400)
+    @Description(value = "Код")
     private String code;
     @XmlPath("KIND_ID/@value")
     @Column(name = "KIND_ID")
-    @Description(value = "Идентификатор вида контейнера: 1 - Реф, 2 - Танк, 3- Универсальный. COMMON категория 161\n", position = 500)
+    @Description(value = "Идентификатор вида контейнера: 1 - Реф, 2 - Танк, 3- Универсальный. COMMON категория 161\n")
     private Integer kindId;
 }
  

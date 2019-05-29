@@ -34,132 +34,132 @@ public class InvCarEntity {
     private String id;
 
 //    @Basic
-//    @Description(value = "№ п/п", position = 50)
+//    @Description(value = "№ п/п")
 //    @Column(name = "car_number_pp", nullable = true)
 //    private Integer carNumberPP;
 
     @Basic
-    @Description(value = "Номер вагона", position = 100)
+    @Description(value = "Номер вагона")
     @Column(name = "car_number", nullable = true, length = 20)
     private String carNumber;
 
     @Basic
     @Column(name = "car_owner_name", nullable = true, length = 255)
-    @Description(value = "Собственник", position = 200)
+    @Description(value = "Собственник")
     private String carOwnerName;
 
     @Basic
     @Column(name = "car_owner_ID", nullable = true)
-    @Description(value = "Собственник", position = 300)
+    @Description(value = "Собственник")
     private Integer carOwnerId;
 
     @Basic
     @Column(name = "car_owner_okpo", nullable = true, length = 10)
-    @Description(value = "Собственник", position = 400)
+    @Description(value = "Собственник")
     private String carOwnerOkpoOkpo;
 
     @Basic
     @Column(name = "car_tenant_ID", nullable = true)
-    @Description(value = "Арендатор, ID, код ОКПО, наименование арендатора", position = 500)
+    @Description(value = "Арендатор, ID, код ОКПО, наименование арендатора")
     private Integer carTenantId;
 
     @Basic
     @Column(name = "car_tenant_okpo", nullable = true, length = 10)
-    @Description(value = "Арендатор, ID, код ОКПО, наименование арендатора", position = 600)
+    @Description(value = "Арендатор, ID, код ОКПО, наименование арендатора")
     private String carTenantOkpo;
 
     @Basic
     @Column(name = "car_tenant_name", nullable = true, length = 255)
-    @Description(value = "Арендатор, ID, код ОКПО, наименование арендатора", position = 700)
+    @Description(value = "Арендатор, ID, код ОКПО, наименование арендатора")
     private String carTenantName;
 
     @Nsi(nsiClassEntity = SWagTypeEntity.class)
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "car_type_ID", referencedColumnName = "WAG_TYPE_ID")
-    @Description(value = "Род вагона (ID по НСИ – WAG_TYPE)", position = 800)
+    @Description(value = "Род вагона (ID по НСИ – WAG_TYPE)")
     @ModelClass(SWagTypeEntity.class)
     private SWagTypeEntity carType;
 
     @Basic
     @Column(name = "car_tonnage", nullable = true, precision = 0)
-    @Description(value = "Грузоподъемность в т.", position = 900)
+    @Description(value = "Грузоподъемность в т.")
     private Double carTonnage;
 
     @Basic
     @Column(name = "car_axles", nullable = true)
-    @Description(value = "Кол-во осей", position = 1000)
+    @Description(value = "Кол-во осей")
     private Integer carAxles;
 
     @Basic
     @Column(name = "car_weight_net", nullable = true, precision = 0)
-    @Description(value = "Масса в кг нетто", position = 1100)
+    @Description(value = "Масса в кг нетто")
     private Double carWeightNet;
 
     @Basic
     @Column(name = "car_sign", nullable = true, precision = 0)
-    @Description(value = "Признак", position = 1200)
+    @Description(value = "Признак")
     private Integer carSign;
 
 
     @Nsi(nsiClassEntity = SCountryEntity.class)
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "car_owner_country_id", referencedColumnName = "CN_ID")
-    @Description(value = "Страна-собственник (код ОКСМ по НСИ - COUNTRY)", position = 1300)
+    @Description(value = "Страна-собственник (код ОКСМ по НСИ - COUNTRY)")
     @ModelClass(SCountryEntity.class)
     private SCountryEntity carOwnerCountry;
 
     @Basic
     @Column(name = "car_weight_gross", nullable = true, precision = 0)
-    @Description(value = "Масса в кг брутто", position = 1400)
+    @Description(value = "Масса в кг брутто")
     private Double carWeightGross;
 
     @Basic
     @Column(name = "car_rolls", nullable = true)
-    @Description(value = "Ролики", position = 1500)
+    @Description(value = "Ролики")
     private Integer carRolls;
 
     @Basic
     @Column(name = "car_weight_dep", nullable = true, precision = 0)
-    @Description(value = "Масса тары ц (с бруса)", position = 1600)
+    @Description(value = "Масса тары ц (с бруса)")
     private Double carWeightDep;
 
     @Basic
     @Column(name = "car_weight_dep_real", nullable = true, precision = 0)
-    @Description(value = "Масса тары ц. (проверенная)", position = 1700)
+    @Description(value = "Масса тары ц. (проверенная)")
     private Double carWeightDepReal;
 
     @Basic
     @Column(name = "car_guide_count", nullable = true)
-    @Description(value = "Количество проводников", position = 1800)
+    @Description(value = "Количество проводников")
     private Integer carGuideCount;
 
     @Basic
     @Column(name = "car_places_count", nullable = true)
-    @Description(value = "Количество мест", position = 1900)
+    @Description(value = "Количество мест")
     private Integer carPlacesCount;
 
     //    Станция перегруза
     @Nsi(nsiClassEntity = SStationEntity.class, type = Nsi.Type.ID)
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "car_overload_station_id", referencedColumnName = "ST_ID")
-    @Description(value = "Станция перегруза", position = 2000)
+    @Description(value = "Станция перегруза")
     @ModelClass(SStationEntity.class)
     private SStationEntity carOverloadStation;
 
     @Basic
     @Column(name = "car_date_overload", nullable = true)
-    @Description(value = "Дата перегруза", position = 2100)
+    @Description(value = "Дата перегруза")
     private Date carDateOverload;
 
     @Basic
     @Column(name = "car_volume", nullable = true, precision = 0)
-    @Description(value = "Объем кузова", position = 2200)
+    @Description(value = "Объем кузова")
     private Double carVolume;
 
     @Nsi(nsiClassEntity = SFreightEntity.class)
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "car_prior_freigh_id", referencedColumnName = "FR_ID")
-    @Description(value = " Ранее перевозившийся груз (Код ЕТ СНГ по НСИ - FREIGHT)", position = 2300)
+    @Description(value = " Ранее перевозившийся груз (Код ЕТ СНГ по НСИ - FREIGHT)")
     @ModelClass(SFreightEntity.class)
     private SFreightEntity carPriorFreight;
 
@@ -172,18 +172,18 @@ public class InvCarEntity {
 
     @Basic
     @Column(name = "car_claim_Id", nullable = true, precision = 0)
-    @Description(value = "Идентификатор заявки ГУ-12", position = 2400)
+    @Description(value = "Идентификатор заявки ГУ-12")
     private Double carClaimId;
 
     @Basic
     @Column(name = "car_claim_num_otp", nullable = true, precision = 0)
-    @Description(value = "Номер отправки в заявке", position = 2500)
+    @Description(value = "Номер отправки в заявке")
     private Double carClaimNumOtp;
 
     @JsonIdentityReference(alwaysAsId = true)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_invoice", referencedColumnName = "invoice_doc_id", nullable = false)
-    @Description(value = "invoice_id", position = 2600)
+    @Description(value = "invoice_id")
     @IgnoreField
     private InvoiceEntity invoice;
 

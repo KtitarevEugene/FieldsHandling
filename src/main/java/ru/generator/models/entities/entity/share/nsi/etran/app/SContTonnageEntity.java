@@ -20,23 +20,23 @@ public class SContTonnageEntity implements NsiEtran {
     @Id
     @XmlPath("CONT_TONNAGE_ID/@value")
     @Column(name = "CONT_TONNAGE_ID")
-    @Description(value = "Идентификатор Тоннажности контейнера", position = 100)
+    @Description(value = "Идентификатор Тоннажности контейнера")
     private Integer contTonnageId;
     @XmlPath("TONNAGE/@value")
     @Column(name = "TONNAGE")
-    @Description(value = "Тоннаж (тонны)", position = 200)
+    @Description(value = "Тоннаж (тонны)")
     private Integer tonnage;
     @XmlPath("TONNAGE_TYPE_ID/@value")
     @Column(name = "TONNAGE_TYPE_ID")
-    @Description(value = "Тип контейнера: 2 - Среднетоннажный, 3 - Крупнотоннажный. COMMON категория 160\n", position = 300)
+    @Description(value = "Тип контейнера: 2 - Среднетоннажный, 3 - Крупнотоннажный. COMMON категория 160\n")
     private Integer tonnageTypeId;
     @XmlPath("SHORT_NAME/@value")
     @Column(name = "SHORT_NAME", length = 20)
-    @Description(value = "Наименование", position = 400)
+    @Description(value = "Наименование")
     private String shortName;
     @XmlPath("KOL_USL/@value")
     @Column(name = "KOL_USL")
-    @Description(value = "Количество условных контейнеров", position = 500)
+    @Description(value = "Количество условных контейнеров")
     private Integer kolUsl;
 
 }

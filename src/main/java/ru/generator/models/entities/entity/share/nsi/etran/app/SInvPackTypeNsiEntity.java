@@ -24,27 +24,27 @@ public class SInvPackTypeNsiEntity extends NsiWithTransIdAbstractEntity implemen
     @Id
     @XmlPath("POCKET/@value")
     @Column(name = "POCKET")
-    @Description(value = "Идентификатор типа упаковки.", position = 100)
+    @Description(value = "Идентификатор типа упаковки.")
     private Integer pocket;
     @XmlPath("NAME/@value")
     @Column(name = "NAME", length = 150)
-    @Description(value = "Полное наименование типа упаковки.", position = 200)
+    @Description(value = "Полное наименование типа упаковки.")
     private String name;
     @XmlPath("SHORT_NAME/@value")
     @Column(name = "SHORT_NAME", length = 50)
-    @Description(value = "Короткое наименование типа упаковки.", position = 300)
+    @Description(value = "Короткое наименование типа упаковки.")
     private String shortName;
     @XmlPath("LOAD_TYPE/@value")
     @Column(name = "LOAD_TYPE")
-    @Description(value = "Способ погрузки 0 - тарно-штучная, 1 - наливом, 2 - насыпью.", position = 400)
+    @Description(value = "Способ погрузки 0 - тарно-штучная, 1 - наливом, 2 - насыпью.")
     private Integer loadType;
     @XmlPath("IODV_CODE/@value")
     @Column(name = "IODV_CODE", length = 2)
-    @Description(value = "Код ЕК ИОДВ.", position = 500)
+    @Description(value = "Код ЕК ИОДВ.")
     private String iodvCode;
     @XmlPath("CODE_OON/@value")
     @Column(name = "CODE_OON", length = 3)
-    @Description(value = "Код упаковки по Рекомендации №21 ЕЭК ООН ", position = 600)
+    @Description(value = "Код упаковки по Рекомендации №21 ЕЭК ООН ")
     private String codeOon;
 }
  

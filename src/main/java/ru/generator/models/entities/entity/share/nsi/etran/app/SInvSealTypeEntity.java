@@ -23,27 +23,27 @@ public class SInvSealTypeEntity extends TimeActiveNsiEntity implements NsiEtran 
     @Id
     @XmlPath("SEAL_TYPE/@value")
     @Column(name = "SEAL_TYPE")
-    @Description(value = "", position = 100)
+    @Description(value = "")
     private Integer sealType;
     @XmlPath("NAME/@value")
     @Column(name = "NAME", length = 40)
-    @Description(value = "", position = 200)
+    @Description(value = "")
     private String name;
     @XmlPath("SEAL_CODE/@value")
     @Column(name = "SEAL_CODE")
-    @Description(value = "Код ЗПУ", position = 300)
+    @Description(value = "Код ЗПУ")
     private Integer sealCode;
     @XmlPath("MNEMO_CODE/@value")
     @Column(name = "MNEMO_CODE", length = 5)
-    @Description(value = "Мнемокод", position = 400)
+    @Description(value = "Мнемокод")
     private String mnemoCode;
     @XmlPath("SEAL_CODE2/@value")
     @Column(name = "SEAL_CODE2")
-    @Description(value = "Дополнительный код ЗПУ", position = 500)
+    @Description(value = "Дополнительный код ЗПУ")
     private Integer sealCode2;
     @XmlPath("FACTORY_CODE/@value")
     @Column(name = "FACTORY_CODE")
-    @Description(value = "Код завода", position = 600)
+    @Description(value = "Код завода")
     private Integer factoryCode;
 }
  

@@ -24,46 +24,46 @@ public class SDfAccidentCardEntity extends NsiWithTransIdAbstractEntity implemen
     @Id
     @XmlPath("CARD_ID/@value")
     @Column(name = "CARD_ID")
-    @Description(value = "ID", position = 100)
+    @Description(value = "ID")
     private Integer cardId;
     @Column(name = "ORDER_NO", length = 40)
-    @Description(value = "Номер приказа на изменение классификатора", position = 200)
+    @Description(value = "Номер приказа на изменение классификатора")
     private String orderNo;
     @XmlPath("NOMER/@value")
     @Column(name = "NOMER")
-    @Description(value = "Номер карты", position = 300)
+    @Description(value = "Номер карты")
     private Integer nomer;
     @XmlPath("MAIN_ID/@value")
     @Column(name = "MAIN_ID")
-    @Description(value = "Карта основных свойств", position = 400)
+    @Description(value = "Карта основных свойств")
     private Integer mainId;
     @XmlPath("FIRE_ID/@value")
     @Column(name = "FIRE_ID")
-    @Description(value = "Карта взрыво и пожароопасности", position = 500)
+    @Description(value = "Карта взрыво и пожароопасности")
     private Integer fireId;
     @XmlPath("HUMANDANGER_ID/@value")
     @Column(name = "HUMANDANGER_ID")
-    @Description(value = "Опасность для человека", position = 600)
+    @Description(value = "Опасность для человека")
     private Integer humandangerId;
     @XmlPath("PROTECT_ID/@value")
     @Column(name = "PROTECT_ID")
-    @Description(value = "Средства индивидуальной защиты", position = 700)
+    @Description(value = "Средства индивидуальной защиты")
     private Integer protectId;
     @XmlPath("ACT_COMMON_ID/@value")
     @Column(name = "ACT_COMMON_ID")
-    @Description(value = "Дейсвия общего характера", position = 800)
+    @Description(value = "Дейсвия общего характера")
     private Integer actCommonId;
     @XmlPath("ACT_ROZVAL_ID/@value")
     @Column(name = "ACT_ROZVAL_ID")
-    @Description(value = "Дейсвия при развале и россыпи", position = 900)
+    @Description(value = "Дейсвия при развале и россыпи")
     private Integer actRozvalId;
     @XmlPath("ACT_FIRE_ID/@value")
     @Column(name = "ACT_FIRE_ID")
-    @Description(value = "Действия при пожаре", position = 1000)
+    @Description(value = "Действия при пожаре")
     private Integer actFireId;
     @XmlPath("FIRST_HELP_ID/@value")
     @Column(name = "FIRST_HELP_ID")
-    @Description(value = "Меры первой помощи", position = 1100)
+    @Description(value = "Меры первой помощи")
     private Integer firstHelpId;
 }
  

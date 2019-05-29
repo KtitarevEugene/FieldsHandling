@@ -24,19 +24,19 @@ public class SInvPayFormEntity extends NsiWithTransIdAbstractEntity implements S
     @Id
     @XmlPath("PAY_FORM/@value")
     @Column(name = "PAY_FORM")
-    @Description(value = "Идентификатор формы расчета за перевозку.", position = 100)
+    @Description(value = "Идентификатор формы расчета за перевозку.")
     private Integer payForm;
     @XmlPath("NAME/@value")
     @Column(name = "NAME", length = 80)
-    @Description(value = "Наименование формы расчета за перевозку.", position = 200)
+    @Description(value = "Наименование формы расчета за перевозку.")
     private String name;
     @XmlPath("CODE/@value")
     @Column(name = "CODE")
-    @Description(value = "Код формы расчета за перевозку.", position = 300)
+    @Description(value = "Код формы расчета за перевозку.")
     private Integer code;
     @XmlPath("SHORTNAME/@value")
     @Column(name = "SHORTNAME", length = 20)
-    @Description(value = "", position = 400)
+    @Description(value = "")
     private String shortname;
 }
  

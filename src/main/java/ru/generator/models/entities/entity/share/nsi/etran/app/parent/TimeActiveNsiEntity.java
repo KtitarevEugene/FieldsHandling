@@ -18,18 +18,18 @@ public class TimeActiveNsiEntity implements Serializable {
     @XmlJavaTypeAdapter(value = XMLDateTimeAdapterEtran.class)
     @XmlPath("RECDATENEW/@value")
     @Column(name = "recdatenew")
-    @Description(value = "Дата появления записи в таблице", position = 10000)
+    @Description(value = "Дата появления записи в таблице")
     private Date recDateNew;
 
     @XmlJavaTypeAdapter(value = XMLDateTimeAdapterEtran.class)
     @XmlPath("RECDATEBEGIN/@value")
     @Column(name = "recdatebegin")
-    @Description(value = "Дата ввода в действие", position = 10100)
+    @Description(value = "Дата ввода в действие")
     private Date recDateBegin;
 
     @XmlJavaTypeAdapter(value = XMLDateTimeAdapterEtran.class)
     @XmlPath("RECDATEEND/@value")
     @Column(name = "recdateend")
-    @Description(value = "Дата вывода из действия", position = 10200)
+    @Description(value = "Дата вывода из действия")
     private Date recDateEnd;
 }

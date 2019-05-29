@@ -20,15 +20,15 @@ public class SInvSpeedKindEntity implements NsiEtran {
     @Id
     @XmlPath("SPEED/@value")
     @Column(name = "SPEED")
-    @Description(value = "Идентификатор типа скорости перевозки.", position = 100)
+    @Description(value = "Идентификатор типа скорости перевозки.")
     private Integer speed;
     @XmlPath("NAME/@value")
     @Column(name = "NAME", length = 40)
-    @Description(value = "Наименование скорости перевозки.", position = 200)
+    @Description(value = "Наименование скорости перевозки.")
     private String name;
     @XmlPath("SPEED_CODE/@value")
     @Column(name = "SPEED_CODE")
-    @Description(value = "Код скорости", position = 300)
+    @Description(value = "Код скорости")
     private Integer speedCode;
 }
  
