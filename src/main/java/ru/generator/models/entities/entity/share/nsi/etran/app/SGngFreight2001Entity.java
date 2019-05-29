@@ -1,10 +1,10 @@
 package ru.generator.models.entities.entity.share.nsi.etran.app;
 
-import ru.generator.service.annotations.Description;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.eclipse.persistence.oxm.annotations.XmlPath;
 import ru.generator.models.entities.entity.share.nsi.etran.app.parent.NsiWithTransIdAbstractEntity;
+import ru.generator.service.annotations.Description;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

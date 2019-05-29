@@ -1,10 +1,10 @@
 package ru.generator.models.entities.entity.etran.invoice;
 
-import ru.generator.models.entities.entity.share.nsi.etran.app.parent.adapter.XMLDateTimeAdapterEtran;
 import lombok.Data;
 import org.eclipse.persistence.oxm.annotations.XmlPath;
 import org.hibernate.annotations.GenericGenerator;
 import org.mapstruct.Mapper;
+import ru.generator.models.entities.entity.share.nsi.etran.app.parent.adapter.XMLDateTimeAdapterEtran;
 import ru.generator.service.annotations.IgnoreField;
 import ru.generator.service.annotations.ModelClass;
 

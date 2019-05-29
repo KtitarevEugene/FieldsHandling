@@ -3,12 +3,12 @@ package ru.generator.models.entities.entity.ktlo.invoice;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import io.swagger.annotations.ApiModel;
-import ru.generator.service.annotations.Description;
 import lombok.Data;
 import org.eclipse.persistence.oxm.annotations.XmlPath;
 import org.hibernate.annotations.GenericGenerator;
 import ru.generator.models.entities.annotation.Nsi;
 import ru.generator.models.entities.entity.share.nsi.etran.app.*;
+import ru.generator.service.annotations.Description;
 import ru.generator.service.annotations.ModelClass;
 
 import javax.persistence.*;

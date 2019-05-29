@@ -2,7 +2,6 @@ package ru.generator.models.entities.entity.ktlo.invoice;
 
 import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import io.swagger.annotations.ApiModel;
-import ru.generator.service.annotations.Description;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 import ru.generator.models.entities.annotation.Nsi;
@@ -10,6 +9,7 @@ import ru.generator.models.entities.entity.share.nsi.etran.app.SCountryEntity;
 import ru.generator.models.entities.entity.share.nsi.etran.app.SFreightEntity;
 import ru.generator.models.entities.entity.share.nsi.etran.app.SStationEntity;
 import ru.generator.models.entities.entity.share.nsi.etran.app.SWagTypeEntity;
+import ru.generator.service.annotations.Description;
 import ru.generator.service.annotations.IgnoreField;
 import ru.generator.service.annotations.ModelClass;
 

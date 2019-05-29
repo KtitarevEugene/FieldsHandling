@@ -3,11 +3,11 @@ package ru.generator.models.entities.entity.ktlo.invoice;
 import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.swagger.annotations.ApiModel;
-import ru.generator.service.annotations.Description;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 import ru.generator.models.entities.annotation.Nsi;
 import ru.generator.models.entities.entity.share.nsi.etran.app.*;
+import ru.generator.service.annotations.Description;
 import ru.generator.service.annotations.IgnoreField;
 import ru.generator.service.annotations.ModelClass;
 
