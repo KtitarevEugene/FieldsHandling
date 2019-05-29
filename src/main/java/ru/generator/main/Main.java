@@ -9,6 +9,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) {
+
         try (FileWriter fileWriter = new FileWriter("C:\\Users\\ektitarev\\Documents\\invoice_info.json")) {
             Generator generator = new Generator();
 

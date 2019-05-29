@@ -10,11 +10,13 @@ import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Generator {
 
-    private static final String PRIMITIVE_INTEGER_NAME = "int";
-    private static final String PRIMITIVE_CHARACTER_NAME = "char";
+    private static final Pattern PRIMITIVE_INTEGER_NAME = Pattern.compile("^(int)(\\[(?=\\])\\])?$");
+    private static final Pattern PRIMITIVE_CHARACTER_NAME = Pattern.compile("^(char)(\\[(?=\\])\\])?$");
 
     public String getFieldsInfoJson(Class<?> modelType) throws JsonProcessingException {
         List<FieldInfo> fieldsInfo = getFieldsInfoList(modelType);
@@ -94,15 +96,15 @@ public class Generator {
     @NotNull
     private String getActualTypeSimpleName(@NotNull Field field) {
 
-        Type fieldType = field.getGenericType();
+        Type fieldGenericType = field.getGenericType();
 
-        if (fieldType instanceof ParameterizedType) {
+        if (fieldGenericType instanceof ParameterizedType) {
             if (Iterable.class.isAssignableFrom(field.getType())) {
-                Type genericArgument = ((ParameterizedType) fieldType).getActualTypeArguments()[0];
+                Type genericArgument = ((ParameterizedType) fieldGenericType).getActualTypeArguments()[0];
 
                 return ((Class<?>)genericArgument).getSimpleName().toLowerCase();
             } else if (Map.class.isAssignableFrom(field.getType())) {
-                Type genericArgument = ((ParameterizedType) fieldType).getActualTypeArguments()[1];
+                Type genericArgument = ((ParameterizedType) fieldGenericType).getActualTypeArguments()[1];
 
                 return ((Class<?>)genericArgument).getSimpleName().toLowerCase();
             } else {
@@ -114,12 +116,20 @@ public class Generator {
     }
 
     private String normalizeSimpleTypeName(String typeName) {
-        if (PRIMITIVE_INTEGER_NAME.equalsIgnoreCase(typeName)) {
-            return Integer.class.getSimpleName();
-        } else if (PRIMITIVE_CHARACTER_NAME.equalsIgnoreCase(typeName)) {
-            return Character.class.getSimpleName();
+        Matcher matcher = PRIMITIVE_INTEGER_NAME.matcher(typeName);
+        if (matcher.matches()) {
+            String parenthesesGroup = matcher.group(2);
+            return Integer.class.getSimpleName() +
+                    (parenthesesGroup != null ? parenthesesGroup : "");
         } else {
-            return typeName;
+            matcher = PRIMITIVE_CHARACTER_NAME.matcher(typeName);
+            if (matcher.matches()) {
+                String parenthesesGroup = matcher.group(2);
+                return Character.class.getSimpleName() +
+                        (parenthesesGroup != null ? parenthesesGroup : "");
+            }
         }
+
+        return typeName;
     }
 }
