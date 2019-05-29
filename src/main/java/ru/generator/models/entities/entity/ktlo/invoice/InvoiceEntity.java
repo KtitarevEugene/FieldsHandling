@@ -361,26 +361,26 @@ public class InvoiceEntity {
 
     @OneToMany(mappedBy = "invoice", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     @Description(value = "НАКЛАДНАЯ: Провозные платежи")
-    @ModelClass(value = InvDueEntity.class, rootTypeName = "parentObject")
+    @ModelClass(value = InvDueEntity.class, fieldTypeName = "parentObject")
     private Collection<InvDueEntity> invDue = new ArrayList<>();
 
     @OneToMany(mappedBy = "invoice", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     @Description(value = "НАКЛАДНАЯ: Вагоны")
-    @ModelClass(value = InvCarEntity.class, rootTypeName = "parentObject")
+    @ModelClass(value = InvCarEntity.class, fieldTypeName = "parentObject")
     private Collection<InvCarEntity> invCar = new ArrayList<>();
 
     @OneToMany(mappedBy = "invoice", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     @Description(value = "НАКЛАДНАЯ: Контейнеры")
-    @ModelClass(value = InvContEntity.class, rootTypeName = "parentObject")
+    @ModelClass(value = InvContEntity.class, fieldTypeName = "parentObject")
     private Collection<InvContEntity> invCont = new ArrayList<>();
 
     @OneToMany(mappedBy = "invoice", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     @Description(value = "НАКЛАДНАЯ: Маршрут следования")
-    @ModelClass(value = InvDistanceEntity.class, rootTypeName = "parentObject")
+    @ModelClass(value = InvDistanceEntity.class, fieldTypeName = "parentObject")
     private Collection<InvDistanceEntity> invDistance = new ArrayList<>();
 
     @OneToMany(mappedBy = "invoice", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     @Description(value = "НАКЛАДНАЯ: Тарифные отметки")
-    @ModelClass(value = InvTarifMarkEntity.class, rootTypeName = "parentObject")
+    @ModelClass(value = InvTarifMarkEntity.class, fieldTypeName = "parentObject")
     private Collection<InvTarifMarkEntity> invTarifMark = new ArrayList<>();
 }

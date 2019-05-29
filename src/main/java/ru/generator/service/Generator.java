@@ -13,8 +13,6 @@ import java.util.*;
 
 public class Generator {
 
-    private static final String OBJECT_TYPE_NAME = "object";
-
     private static final String PRIMITIVE_INTEGER_NAME = "int";
     private static final String PRIMITIVE_CHARACTER_NAME = "char";
 
@@ -85,7 +83,7 @@ public class Generator {
 
             fieldsInfo.add(fieldInfo);
         } else {
-            fieldInfo.setType(OBJECT_TYPE_NAME);
+            fieldInfo.setType(modelClassAnnotation.fieldTypeName());
 
             fieldsInfo.add(fieldInfo);
 
